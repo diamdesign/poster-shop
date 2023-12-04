@@ -51,7 +51,7 @@ header h1 {
 	margin: 60px auto 40px auto;
 	display: flex;
 	flex-wrap: wrap;
-	width: 71%;
+	width: 70%;
 }
 
 .posters div {
@@ -100,14 +100,76 @@ article {
 
 article a {
 	font-size: 0.9rem !important;
-	padding: 20px !important;
+	padding: 16px 24px !important;
+	margin-top: 60px !important;
+}
+
+.posters a:hover {
+	text-decoration: none;
+	background-color: rgb(185, 51, 51);
 }
 
 footer {
+	padding: 20px;
+	line-height: 1.8rem;
 	display: flex;
 	justify-content: center;
 	color: white;
 	padding-top: 60px;
 	padding-bottom: 100px;
 	background-color: rgb(51, 51, 51);
+}
+
+footer h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+footer .contain {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer .links {
+	display: flex;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:hover {
+	opacity: 0.5;
+	text-decoration: underline;
+}
+
+footer .links a {
+	text-indent: -10000px;
+	overflow: hidden;
+	display: block;
+	width: 32px;
+	height: 32px;
+	margin-right: 16px;
+}
+
+.icon-twitter {
+	background-image: url("assets/logo-twitter.svg");
+}
+
+.icon-facebook {
+	background-image: url("assets/logo-facebook.svg");
+}
+
+.icon-linkedin {
+	background-image: url("assets/logo-linkedin.svg");
+}
+
+.icon-instagram {
+	background-image: url("assets/logo-instagram.svg");
 }
