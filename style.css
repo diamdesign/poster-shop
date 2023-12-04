@@ -10,14 +10,21 @@ body {
 	justify-content: center;
 }
 
+h1,
+h2 {
+	text-align: left;
+}
+
 .container {
 	margin: 20px;
 	width: 1500px;
 	background: black;
+	color: white;
 	display: table;
 }
 
 header {
+	color: black;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -34,6 +41,15 @@ header h1 {
 	font-size: 6rem;
 }
 
+.checkout-header {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	padding-top: 180px;
+	font-size: 2.5rem;
+}
+
 .menubtn {
 	background-image: url("assets/navicon.svg");
 	background-repeat: no-repeat;
@@ -46,9 +62,10 @@ header h1 {
 	top: 20px;
 }
 
-.posters {
+.posters,
+.checkout {
 	color: white;
-	margin: 60px auto 40px auto;
+	margin: 0px auto 40px auto;
 	display: flex;
 	flex-wrap: wrap;
 	width: 70%;
@@ -59,11 +76,13 @@ header h1 {
 	margin: 20px 20px 60px 20px;
 }
 
-.posters div img {
+.posters div img,
+.checkout div img {
 	width: 100%;
 }
 
-.posters h2 {
+.posters h2,
+.checkout h2 {
 	margin-top: 16px;
 	font-size: 2rem;
 }
@@ -74,7 +93,8 @@ header h1 {
 	font-size: 1rem;
 }
 
-.posters a {
+.posters a,
+.checkout a {
 	background-color: rgb(229, 67, 89);
 	color: white;
 	text-decoration: none;
@@ -85,10 +105,19 @@ header h1 {
 	border-radius: 4px;
 	font-size: 0.75rem;
 }
+.checkout a {
+	margin-top: 20px !important;
+}
 
 .posters .div:nth-child(10),
-.posters .div:nth-child(11) {
-	flex: 50%;
+.posters .div:nth-child(11),
+.checkout div {
+	flex: 50% !important;
+}
+
+.checkout div {
+	flex: 40% !important;
+	margin: 20px 20px 60px 20px;
 }
 
 article {
@@ -104,12 +133,75 @@ article a {
 	margin-top: 60px !important;
 }
 
-.posters a:hover {
+.posters a:hover,
+.checkout a:hover {
+	text-decoration: none;
+	background-color: rgb(185, 51, 51);
+}
+
+.checkout-bottom {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 80px;
+	display: block;
+}
+
+.flextable {
+	font-size: 1.2rem;
+	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.flextable div {
+	line-height: 3rem;
+	flex: 42%;
+}
+.flextable div:nth-child(3n) {
+	text-align: right;
+	flex: 8%;
+}
+
+.flextable div:nth-child(1),
+.flextable div:nth-child(2),
+.flextable div:nth-child(3) {
+	background-color: rgb(55, 55, 55);
+}
+
+.flextable .last {
+	border-top: 1px solid white;
+	flex: 50%;
+	font-weight: bold;
+}
+
+.flextable .last:last-child {
+	text-align: right;
+}
+
+.button {
+	float: right;
+	margin-right: 20px;
+	margin-bottom: 80px;
+	background-color: rgb(229, 67, 89);
+	color: white;
+	text-decoration: none;
+	padding: 20px 30px;
+	display: block;
+	margin-top: 40px;
+	font-weight: 600;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.button:hover {
 	text-decoration: none;
 	background-color: rgb(185, 51, 51);
 }
 
 footer {
+	clear: both;
 	padding: 20px;
 	line-height: 1.8rem;
 	display: flex;
