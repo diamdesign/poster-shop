@@ -1,0 +1,30 @@
+header {
+	display: grid;
+}
+.posters {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.posters div {
+	display: block;
+}
+
+.posters div a {
+	width: 50%;
+}
+
+footer .contain {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.posters div:nth-child(10) {
+	width: 138%;
+}
+
+.posters div:last-child {
+	width: 138%;
+	margin-left: 57%;
+}
