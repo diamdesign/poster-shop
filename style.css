@@ -30,10 +30,10 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: #3de07e;
-	background-image: url("assets/char-2.png");
-	background-size: 50%;
+	background-image: url("assets/ninjahead.svg");
+	background-size: 280px;
 	background-repeat: no-repeat;
-	background-position: center 360px;
+	background-position: center bottom;
 	height: 600px;
 }
 
@@ -65,10 +65,12 @@ header h1 {
 .posters,
 .checkout {
 	color: white;
-	margin: 0px auto 40px auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-wrap: wrap;
-	width: 70%;
+	max-width: 1060px;
+	margin-top: 40px;
 }
 
 .posters div {
